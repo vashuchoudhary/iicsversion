@@ -1,0 +1,74 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>mvvNtLSVMTonQYW-gt-3225638-2019-06-11T00:02:42.086Z::pd.xml</types1:EntryId>
+      <types1:Name>amqdequeue</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description>test</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags>.agent:ASvcwindows01,.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pjain2@informatica.com</types1:CreatedBy>
+      <types1:CreationDate>2019-06-11T00:02:42Z</types1:CreationDate>
+      <types1:ModifiedBy>pjain2@informatica.com</types1:ModifiedBy>
+      <types1:ModificationDate>2019-06-11T18:53:21Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>pjain2@informatica.com</types1:PublishedBy>
+      <types1:PublicationDate>2019-06-11T18:53:27Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.amqdequeue/amqdequeue.pd.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="amqdequeue"
+                  name="amqdequeue">
+            <appliesTo/>
+            <description>test</description>
+            <tags>.agent:ASvcwindows01,.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="test" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:amqTest</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">iFiA7N0rL4FejJJSn90fAZ</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="Output" type="reference">
+                  <options>
+                     <option name="referenceTo">$po:$any</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <targetLocation>ASvcwindows01</targetLocation>
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="jwr1hpof" targetId="jwr1hpoe"/>
+               </start>
+               <assignment id="jwr1hpoe">
+                  <title>Assignment to Output</title>
+                  <operation source="field" to="output.Output">input.test</operation>
+                  <link id="jwr1hpog" targetId="c"/>
+               </assignment>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>f1Y6fa157ULicUlU3QGTEp</types1:GUID>
+      <types1:DisplayName>amqdequeue</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2019-09-06T02:05:29.826Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

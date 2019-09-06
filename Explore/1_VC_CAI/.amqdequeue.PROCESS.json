@@ -1,0 +1,48 @@
+[
+   {
+      "objectGuid": "f1Y6fa157ULicUlU3QGTEp",
+      "objectName": "amqdequeue",
+      "objectType": "PROCESS",
+      "path": "/Explore/1_VC_CAI",
+      "metadata": {
+         "additionalInfo": {
+            "contentType": "application/json; charset=utf-8",
+            "description": "test",
+            "documentState": "VALID"
+         },
+         "contextAttributes": null,
+         "modelVersion": {
+            "major": 1,
+            "minor": 0
+         },
+         "objectRefs": [
+            "iFiA7N0rL4FejJJSn90fAZ"
+         ],
+         "repoInfo": {
+            "repoHandle": "mvvNtLSVMTonQYW-gt-3225638-2019-06-11T00:02:42.086Z::pd.xml"
+         }
+      }
+   },
+   {
+      "objectGuid": "iFiA7N0rL4FejJJSn90fAZ",
+      "objectName": "amqTest",
+      "objectType": "PROCESS_OBJECT",
+      "path": "/Explore/1_VC_CAI",
+      "metadata": {
+         "additionalInfo": {
+            "contentType": "application/json; charset=utf-8",
+            "description": "",
+            "documentState": "VALID"
+         },
+         "contextAttributes": null,
+         "modelVersion": {
+            "major": 1,
+            "minor": 0
+         },
+         "objectRefs": [],
+         "repoInfo": {
+            "repoHandle": "aaaa-gt-2547894-2019-06-11T00:00:20.067Z::po.xml"
+         }
+      }
+   }
+]
