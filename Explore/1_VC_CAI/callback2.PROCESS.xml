@@ -1,0 +1,69 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>3xgjATO9pH8sVYx-gt-677034-2019-05-09T23:53:08.188Z::pd.xml</types1:EntryId>
+      <types1:Name>callback2</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pjain2@informatica.com</types1:CreatedBy>
+      <types1:CreationDate>2019-05-09T23:53:08Z</types1:CreationDate>
+      <types1:ModifiedBy>pjain2@informatica.com</types1:ModifiedBy>
+      <types1:ModificationDate>2019-08-26T21:59:57Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>pjain2@informatica.com</types1:PublishedBy>
+      <types1:PublicationDate>2019-08-26T22:00:05Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.callback2/callback2.pd.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="callback2"
+                  name="callback2">
+            <appliesTo/>
+            <description/>
+            <tags>.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="Input" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="output" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <rest>
+                  <allowAnonymousAccess/>
+                  <wholePayload inputWholePayload="true"/>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="jvhb2mpl" targetId="jvhb2mpk"/>
+               </start>
+               <assignment id="jvhb2mpk">
+                  <title>Assignment to output</title>
+                  <operation source="field" to="output.output">input.Input</operation>
+                  <link id="jvhb2mpm" targetId="c"/>
+               </assignment>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>l91OgjRkhgIkQaMoHi54oY</types1:GUID>
+      <types1:DisplayName>callback2</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2019-09-16T22:00:18.21Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

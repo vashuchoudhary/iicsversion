@@ -1,0 +1,24 @@
+[
+   {
+      "objectGuid": "l91OgjRkhgIkQaMoHi54oY",
+      "objectName": "callback2",
+      "objectType": "PROCESS",
+      "path": "/Explore/1_VC_CAI",
+      "metadata": {
+         "additionalInfo": {
+            "contentType": "application/json; charset=utf-8",
+            "description": "",
+            "documentState": "VALID"
+         },
+         "contextAttributes": null,
+         "modelVersion": {
+            "major": 1,
+            "minor": 0
+         },
+         "objectRefs": [],
+         "repoInfo": {
+            "repoHandle": "3xgjATO9pH8sVYx-gt-677034-2019-05-09T23:53:08.188Z::pd.xml"
+         }
+      }
+   }
+]
