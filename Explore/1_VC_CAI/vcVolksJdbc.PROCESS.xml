@@ -1,0 +1,110 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>Wiaaa-gt-12856619-2019-09-04T17:38:35.788Z::pd.xml</types1:EntryId>
+      <types1:Name>vcVolksJdbc</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description>Test</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags>.agent:ASvcwindows01,.anonymous</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pjain2@informatica.com</types1:CreatedBy>
+      <types1:CreationDate>2019-09-04T17:38:36Z</types1:CreationDate>
+      <types1:ModifiedBy>pjain2@informatica.com</types1:ModifiedBy>
+      <types1:ModificationDate>2019-09-10T18:05:16Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="vcVolksJdbc"
+                  name="vcVolksJdbc">
+            <appliesTo/>
+            <description>Test</description>
+            <tags>.agent:ASvcwindows01,.anonymous</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="insert" type="reference">
+                  <options>
+                     <option name="referenceTo">VCvolksvagen12c-1:PROCESS</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">jjAz4kHuRuCeR1ZZbiQ5yQ</option>
+                  </options>
+               </field>
+               <field description="" name="processId" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="tablerec" type="reference">
+                  <options>
+                     <option name="referenceTo">VCvolksvagen12c-1:PROCESS</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">jjAz4kHuRuCeR1ZZbiQ5yQ</option>
+                  </options>
+               </field>
+               <field description="" name="testvalue" type="reference">
+                  <options>
+                     <option name="referenceTo">VCvolksvagen12c-1:PROCESS</option>
+                     <option name="required">false</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">jjAz4kHuRuCeR1ZZbiQ5yQ</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="verbose">
+               <targetLocation>EMPJ000101</targetLocation>
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="jyf0yeee" targetId="jyf0yeed"/>
+               </start>
+               <assignment id="jyf0yeed">
+                  <title>Assignment to processId</title>
+                  <operation source="formula" to="temp.processId">
+                     <expression language="XQuery">util:getProcessId()</expression>
+                  </operation>
+                  <link id="jyf0yeef" targetId="jyf0yee3"/>
+               </assignment>
+               <assignment id="jygdcb9d">
+                  <title>Assignment to tablerec, testvalue</title>
+                  <operation source="query" to="temp.tablerec">
+                     <query from="VCvolksvagen12c-1:PROCESS">
+                        <where>NAME = 'vasum'</where>
+                     </query>
+                  </operation>
+                  <operation source="field" to="temp.testvalue">temp.testvalue</operation>
+                  <link id="jygdcb9r" targetId="jygdcb9q"/>
+               </assignment>
+               <assignment id="jygdcb9q">
+                  <title>Assignment to NAME</title>
+                  <operation source="constant" to="temp.testvalue.NAME">heyyy</operation>
+                  <link id="jygdcb9s" targetId="c"/>
+               </assignment>
+               <create id="jyf0yee3">
+                  <title>PROCESS</title>
+                  <entityName>VCvolksvagen12c-1:PROCESS</entityName>
+                  <createInput>
+                     <parameter name="PID" source="field" updatable="true">temp.processId</parameter>
+                     <parameter name="NAME" source="constant" updatable="true">vasum</parameter>
+                     <parameter name="VALUE" source="constant" updatable="true">v</parameter>
+                  </createInput>
+                  <link id="jygdcb9e" targetId="jygdcb9d"/>
+               </create>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>6xLr4IXt86lbpV31oPt5IP</types1:GUID>
+      <types1:DisplayName>vcVolksJdbc</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2019-09-16T21:57:15.085Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

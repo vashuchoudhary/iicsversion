@@ -1,0 +1,69 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>YcmYsGuDoWn2sqe-gt-118376279-2019-07-23T21:52:11.806Z::conn.xml</types1:EntryId>
+      <types1:Name>VCvolksvagen12c-1</types1:Name>
+      <types1:ParentFlowIds>tmdz9Iqy3eHRi92-gt-118455163-2019-07-23T22:45:51.319Z::pd.xml,Wiaaa-gt-12856619-2019-09-04T17:38:35.788Z::pd.xml,o1FGtuslqAOclkZ-gt-151382878-2019-07-26T19:19:50.24Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description>hgvhg</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags>.agent:ASvcwindows01</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>pjain2@informatica.com</types1:CreatedBy>
+      <types1:CreationDate>2019-07-23T21:52:12Z</types1:CreationDate>
+      <types1:ModifiedBy>pjain2@informatica.com</types1:ModifiedBy>
+      <types1:ModificationDate>2019-09-10T18:05:15Z</types1:ModificationDate>
+      <types1:PublicationStatus>out-of-date</types1:PublicationStatus>
+      <types1:PublishedBy>pjain2@informatica.com</types1:PublishedBy>
+      <types1:PublicationDate>2019-07-26T19:14:03Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connection/VCvolksvagen12c-1/VCvolksvagen12c-1.conn.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="VCvolksvagen12c"
+                     label="VCvolksvagen12c-1"
+                     name="VCvolksvagen12c-1">
+            <description>hgvhg</description>
+            <tags>.agent:ASvcwindows01</tags>
+            <agent>ASvcwindows01</agent>
+            <attributes>
+               <attribute encrypted="false"
+                          name="JDBC Connection URL"
+                          value="jdbc:oracle:thin:@//TSORA11G:1521/ORCL"/>
+               <attribute encrypted="false"
+                          name="JDBC Jar Directory"
+                          value="C:\jdbcdriver\volks\"/>
+               <attribute encrypted="false"
+                          name="JDBC Driver Class Name"
+                          value="oracle.jdbc.OracleDriver"/>
+               <attribute encrypted="false" name="Schema" value=""/>
+               <attribute encrypted="false" name="Username" value="c02324343"/>
+               <attribute encrypted="true" name="Password" value=""/>
+               <attribute encrypted="false" name="Object Filter" value=""/>
+               <attribute encrypted="false" name="TimeZone" value="Default"/>
+               <attribute encrypted="false" name="$read-Isolation Level" value="None"/>
+               <attribute encrypted="false"
+                          name="$read-Override Isolation Level"
+                          value="false"/>
+               <attribute encrypted="false" name="$write-Number of retries" value="5"/>
+               <attribute encrypted="false" name="$write-Retry wait period" value="3"/>
+            </attributes>
+            <javaConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                           agentOnly="true"
+                           plugin="ICS"
+                           supportsConnectionTest="true"
+                           supportsDataPreview="true"
+                           supportsOData="true"
+                           type="GenericJDBCAdapter"
+                           uuid="33ec8fc7-dc6d-4d2e-9f6f-a950669a62d1">
+               <description>JDBC  Generic Cloud Adapter</description>
+            </javaConnector>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>jjAz4kHuRuCeR1ZZbiQ5yQ</types1:GUID>
+      <types1:DisplayName>VCvolksvagen12c</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2019-09-16T21:57:14.964Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

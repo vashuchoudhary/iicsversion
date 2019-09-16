@@ -1,0 +1,48 @@
+[
+   {
+      "objectGuid": "6xLr4IXt86lbpV31oPt5IP",
+      "objectName": "vcVolksJdbc",
+      "objectType": "PROCESS",
+      "path": "/Explore/1_VC_CAI",
+      "metadata": {
+         "additionalInfo": {
+            "contentType": "application/json; charset=utf-8",
+            "description": "Test",
+            "documentState": "VALID"
+         },
+         "contextAttributes": null,
+         "modelVersion": {
+            "major": 1,
+            "minor": 0
+         },
+         "objectRefs": [
+            "jjAz4kHuRuCeR1ZZbiQ5yQ"
+         ],
+         "repoInfo": {
+            "repoHandle": "Wiaaa-gt-12856619-2019-09-04T17:38:35.788Z::pd.xml"
+         }
+      }
+   },
+   {
+      "objectGuid": "jjAz4kHuRuCeR1ZZbiQ5yQ",
+      "objectName": "VCvolksvagen12c",
+      "objectType": "AI_CONNECTION",
+      "path": "/Explore/1_VC_CAI",
+      "metadata": {
+         "additionalInfo": {
+            "contentType": "application/json; charset=utf-8",
+            "description": "hgvhg",
+            "documentState": "VALID"
+         },
+         "contextAttributes": null,
+         "modelVersion": {
+            "major": 1,
+            "minor": 0
+         },
+         "objectRefs": [],
+         "repoInfo": {
+            "repoHandle": "YcmYsGuDoWn2sqe-gt-118376279-2019-07-23T21:52:11.806Z::conn.xml"
+         }
+      }
+   }
+]
